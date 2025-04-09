@@ -1,10 +1,13 @@
 {
-  "/_not-found/page": "/_not-found",
-  "/page": "/",
-  "/contact/page": "/contact",
+  "/api/test-db/route": "/api/test-db",
+  "/api/contact/route": "/api/contact",
   "/careers/page": "/careers",
+  "/contact/page": "/contact",
+  "/page": "/",
+  "/_not-found/page": "/_not-found",
+  "/engine/page": "/engine",
   "/privacy-policy/page": "/privacy-policy",
-  "/use-cases/page": "/use-cases",
+  "/terms-of-use/page": "/terms-of-use",
   "/security/page": "/security",
-  "/terms-of-use/page": "/terms-of-use"
+  "/use-cases/page": "/use-cases"
 }

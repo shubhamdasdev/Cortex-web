@@ -121,7 +121,6 @@
     },
     "outputFileTracingRoot": "/Users/myspace/Downloads/Cortex- website",
     "experimental": {
-      "allowedDevOrigins": [],
       "nodeMiddleware": false,
       "cacheLife": {
         "default": {
@@ -326,6 +325,6 @@
     "build/server/next-font-manifest.json"
   ],
   "ignore": [
-    "node_modules/.pnpm/next@15.2.4_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/@ampproject/toolbox-optimizer/**/*"
+    "node_modules/next/dist/compiled/@ampproject/toolbox-optimizer/**/*"
   ]
 }

@@ -1,18 +1,16 @@
 {
   "app/ClientBody.tsx -> @/components/Footer": {
-    "id": 6584,
+    "id": 3408,
     "files": [
-      "static/chunks/512-3629398c393245ea.js",
-      "static/chunks/584.cb418de5892335ad.js"
+      "static/chunks/408.0b99eb5c76f3b1a1.js"
     ]
   },
   "app/ClientBody.tsx -> @/components/Navbar": {
-    "id": 5414,
+    "id": 6458,
     "files": [
-      "static/chunks/512-3629398c393245ea.js",
-      "static/chunks/776-e8a839b06806cbbb.js",
-      "static/chunks/439.2731010aa87fb253.js",
-      "static/chunks/414.5a58ad1c5a1a6990.js"
+      "static/chunks/40-a7ed6fc43a35c5e2.js",
+      "static/chunks/970-7e7ba256d92168f0.js",
+      "static/chunks/458.521eac3ee24d2cd1.js"
     ]
   }
 }
