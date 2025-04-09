@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Season Serif';
+  src: url('/fonts/SeasonSerif-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@layer base {
+  :root {
+    --background: 210 30% 5%;
+    --foreground: 0 0% 98%;
+
+    --card: 210 30% 7%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 210 30% 5%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 0 0% 98%;
+    --primary-foreground: 210 30% 5%;
+
+    --secondary: 200 25% 55%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 210 20% 20%;
+    --muted-foreground: 210 10% 70%;
+
+    --accent: 200 25% 55%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 50% 40%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 210 15% 15%;
+    --input: 210 15% 15%;
+    --ring: 200 25% 55%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Season Serif', serif;
+  }
+}
+
+.container {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.gradient-bg {
+  background-image: radial-gradient(circle at 50% 50%, rgba(88, 160, 194, 0.2), rgba(6, 15, 23, 1) 70%);
+}
