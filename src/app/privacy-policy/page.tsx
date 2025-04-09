@@ -8,7 +8,7 @@ export default function PrivacyPolicyPage() {
 
         <div className="prose prose-invert max-w-none">
           <p className="text-muted-foreground mb-8">
-            Last updated: March 14, 2023
+            Last updated: April 9, 2025
           </p>
 
           <h2 className="text-2xl font-serif mt-8 mb-4">Introduction</h2>
@@ -78,7 +78,7 @@ export default function PrivacyPolicyPage() {
             <Link href="mailto:privacy@cortex.ai" className="text-secondary hover:underline">privacy@cortex.ai</Link><br />
             Cortex AI, Inc.<br />
             123 Financial Avenue<br />
-            San Francisco, CA 94103
+            Chicago, IL 60606
           </p>
         </div>
       </div>

@@ -55,9 +55,9 @@ export default function TermsOfUsePage() {
           </p>
 
           <h2 className="text-2xl font-serif mt-8 mb-4">Governing Law</h2>
-          <p className="text-muted-foreground mb-4">
-            These Terms shall be governed and construed in accordance with the laws of the State of California, United States, without regard to its conflict of law provisions. Any legal action or proceeding relating to your access to, or use of, the Services or these Terms shall be instituted in a state or federal court in San Francisco County, California. You agree to submit to the jurisdiction of, and agree that venue is proper in, these courts in any such legal action or proceeding.
-          </p>
+<p className="text-muted-foreground mb-4">
+  These Terms shall be governed by and construed in accordance with the laws of the State of Illinois, United States, without regard to its conflict of law provisions. Any legal action or proceeding relating to your access to or use of Cortex's services or these Terms shall be instituted exclusively in a state or federal court located in Cook County, Illinois. You agree to submit to the jurisdiction of, and agree that venue is proper in, these courts for any such legal action or proceeding.
+</p>
 
           <h2 className="text-2xl font-serif mt-8 mb-4">Changes to Terms</h2>
           <p className="text-muted-foreground mb-4">
@@ -72,7 +72,7 @@ export default function TermsOfUsePage() {
             <Link href="mailto:legal@Cortex.ai" className="text-secondary hover:underline">legal@Cortex.info</Link><br />
             Cortex AI, Inc.<br />
             123 Financial Avenue<br />
-            San Francisco, CA 94103
+            Chicago, IL 60606
           </p>
         </div>
       </div>

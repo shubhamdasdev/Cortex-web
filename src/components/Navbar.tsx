@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X, ChevronDown } from "lucide-react";
+import { Menu, X, ChevronDown, LayoutDashboard, Bot, Brain, Cpu, Puzzle } from "lucide-react";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -61,51 +61,59 @@ const Navbar = () => {
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-secondary group-hover:w-full transition-all duration-300"></span>
               </div>
             }
-            contentClassName="bg-cortex-dark-blue/95 backdrop-blur-md border border-secondary/20 text-white min-w-[200px] rounded-md shadow-lg"
+            contentClassName="bg-cortex-dark-blue/95 backdrop-blur-md border border-secondary/20 text-white min-w-[380px] rounded-md shadow-xl"
           >
-            <div className="py-1">
-              <HoverDropdownItem className="font-medium text-secondary/90 px-4 py-2 border-b border-secondary/10">
+            <div className="py-3">
+              <HoverDropdownItem className="font-medium text-secondary/90 px-4 py-2 mb-2 border-b border-secondary/10">
                 Core Products
               </HoverDropdownItem>
               <HoverDropdownItem>
-                <div className="w-full flex justify-between items-center group">
-                  <Link href="/products/workspace" className="flex-grow">
-                    Workspace
-                  </Link>
-                  <span className="text-[9px] ml-2 text-secondary/80 italic group-hover:text-secondary transition-colors">coming soon</span>
-                </div>
+                <Link href="/products/workspace" className="block">
+                  <div className="flex items-start gap-3 p-3 hover:bg-secondary/10 hover:shadow-md rounded-md transition-all duration-200 group">
+                    <div className="flex-shrink-0 p-2.5 bg-secondary/15 rounded-md shadow-inner border border-secondary/20">
+                      <LayoutDashboard className="h-6 w-6 text-secondary" />
+                    </div>
+                    <div>
+                      <div className="font-medium flex items-center">
+                        Cortex Workspace
+                        <span className="text-[9px] ml-2 text-secondary/80 italic">coming soon</span>
+                      </div>
+                      <p className="text-xs text-white/70 mt-1">Complete environment for AI development and deployment</p>
+                    </div>
+                  </div>
+                </Link>
               </HoverDropdownItem>
               <HoverDropdownItem>
-                <div className="w-full flex justify-between items-center group">
-                  <Link href="/products/agents" className="flex-grow">
-                    Agents
-                  </Link>
-                  <span className="text-[9px] ml-2 text-secondary/80 italic group-hover:text-secondary transition-colors">coming soon</span>
-                </div>
+                <Link href="/products/memory" className="block">
+                  <div className="flex items-start gap-3 p-3 hover:bg-secondary/10 hover:shadow-md rounded-md transition-all duration-200 group">
+                    <div className="flex-shrink-0 p-2.5 bg-secondary/15 rounded-md shadow-inner border border-secondary/20">
+                      <Brain className="h-6 w-6 text-secondary" />
+                    </div>
+                    <div>
+                      <div className="font-medium flex items-center">
+                        NeoCortex
+                        <span className="text-[9px] ml-2 text-secondary/80 italic">coming soon</span>
+                      </div>
+                      <p className="text-xs text-white/70 mt-1">Persistent knowledge storage for enhanced AI reasoning</p>
+                    </div>
+                  </div>
+                </Link>
               </HoverDropdownItem>
               <HoverDropdownItem>
-                <div className="w-full flex justify-between items-center group">
-                  <Link href="/products/memory" className="flex-grow">
-                    Memory
-                  </Link>
-                  <span className="text-[9px] ml-2 text-secondary/80 italic group-hover:text-secondary transition-colors">coming soon</span>
-                </div>
-              </HoverDropdownItem>
-              <HoverDropdownItem>
-                <div className="w-full flex justify-between items-center group">
-                  <Link href="/products/execution" className="flex-grow">
-                    Execution
-                  </Link>
-                  <span className="text-[9px] ml-2 text-secondary/80 italic group-hover:text-secondary transition-colors">coming soon</span>
-                </div>
-              </HoverDropdownItem>
-              <HoverDropdownItem>
-                <div className="w-full flex justify-between items-center group">
-                  <Link href="/products/integrations" className="flex-grow">
-                    Integrations
-                  </Link>
-                  <span className="text-[9px] ml-2 text-secondary/80 italic group-hover:text-secondary transition-colors">coming soon</span>
-                </div>
+                <Link href="/products/integrations" className="block">
+                  <div className="flex items-start gap-3 p-3 hover:bg-secondary/10 hover:shadow-md rounded-md transition-all duration-200 group">
+                    <div className="flex-shrink-0 p-2.5 bg-secondary/15 rounded-md shadow-inner border border-secondary/20">
+                      <Puzzle className="h-6 w-6 text-secondary" />
+                    </div>
+                    <div>
+                      <div className="font-medium flex items-center">
+                        Integrations
+                        <span className="text-[9px] ml-2 text-secondary/80 italic">coming soon</span>
+                      </div>
+                      <p className="text-xs text-white/70 mt-1">Seamless connections to your essential tools and services</p>
+                    </div>
+                  </div>
+                </Link>
               </HoverDropdownItem>
             </div>
           </HoverDropdown>
@@ -119,10 +127,10 @@ const Navbar = () => {
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-secondary group-hover:w-full transition-all duration-300"></span>
               </div>
             }
-            contentClassName="bg-cortex-dark-blue/95 backdrop-blur-md border border-secondary/20 text-white min-w-[200px] rounded-md shadow-lg"
+            contentClassName="bg-cortex-dark-blue/95 backdrop-blur-md border border-secondary/20 text-white min-w-[380px] rounded-md shadow-xl"
           >
-            <div className="py-1">
-              <HoverDropdownItem className="font-medium text-secondary/90 px-4 py-2 border-b border-secondary/10">
+            <div className="py-3">
+              <HoverDropdownItem className="font-medium text-secondary/90 px-4 py-2 mb-2 border-b border-secondary/10">
                 By Industry
               </HoverDropdownItem>
               <HoverDropdownItem>
@@ -132,13 +140,13 @@ const Navbar = () => {
               </HoverDropdownItem>
               <HoverDropdownItem>
                 <div className="w-full flex justify-between items-center group">
-                  <span className="text-white/80">Healthcare</span>
+                  <span className="text-white/80">Legal</span>
                   <span className="text-[9px] ml-2 text-secondary/80 italic group-hover:text-secondary transition-colors">coming soon</span>
                 </div>
               </HoverDropdownItem>
               <HoverDropdownItem>
                 <div className="w-full flex justify-between items-center group">
-                  <span className="text-white/80">Retail</span>
+                  <span className="text-white/80">Consulting</span>
                   <span className="text-[9px] ml-2 text-secondary/80 italic group-hover:text-secondary transition-colors">coming soon</span>
                 </div>
               </HoverDropdownItem>
@@ -160,20 +168,87 @@ const Navbar = () => {
 
             </div>
           </HoverDropdown>
-          <Link 
-            href="/capabilities" 
-            className="text-sm font-medium text-white/80 hover:text-white relative group"
+          {/* Capabilities Dropdown Menu - Hover */}
+          <HoverDropdown
+            trigger={
+              <div className="text-sm font-medium text-white/80 hover:text-white relative group flex items-center gap-1">
+                <span>Capabilities</span>
+                <ChevronDown className="h-4 w-4" />
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-secondary group-hover:w-full transition-all duration-300"></span>
+              </div>
+            }
+            contentClassName="bg-cortex-dark-blue/95 backdrop-blur-md border border-secondary/20 text-white min-w-[380px] rounded-md shadow-xl"
           >
-            <span>Capabilities</span>
-            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-secondary group-hover:w-full transition-all duration-300"></span>
-          </Link>
-          <Link 
-            href="/engine" 
-            className="text-sm font-medium text-white/80 hover:text-white relative group"
+            <div className="py-3">
+              <HoverDropdownItem className="font-medium text-secondary/90 px-4 py-2 mb-2 border-b border-secondary/10">
+                Core Capabilities
+              </HoverDropdownItem>
+              <HoverDropdownItem>
+                <Link href="/products/agents" className="block">
+                  <div className="flex items-start gap-3 p-3 hover:bg-secondary/10 hover:shadow-md rounded-md transition-all duration-200 group">
+                    <div className="flex-shrink-0 p-2.5 bg-secondary/15 rounded-md shadow-inner border border-secondary/20">
+                      <Bot className="h-6 w-6 text-secondary" />
+                    </div>
+                    <div>
+                      <div className="font-medium flex items-center">
+                        Mastero
+                        <span className="text-[9px] ml-2 text-secondary/80 italic">coming soon</span>
+                      </div>
+                      <p className="text-xs text-white/70 mt-1">Intelligent AI agents that automate complex workflows</p>
+                    </div>
+                  </div>
+                </Link>
+              </HoverDropdownItem>
+              <HoverDropdownItem>
+                <Link href="/capabilities" className="block">
+                  <div className="flex items-start gap-3 p-3 hover:bg-secondary/10 hover:shadow-md rounded-md transition-all duration-200 group">
+                    <div className="flex-shrink-0 p-2.5 bg-secondary/15 rounded-md shadow-inner border border-secondary/20">
+                      <LayoutDashboard className="h-6 w-6 text-secondary" />
+                    </div>
+                    <div>
+                      <div className="font-medium flex items-center">
+                        Overview
+                      </div>
+                      <p className="text-xs text-white/70 mt-1">Explore all Cortex AI capabilities</p>
+                    </div>
+                  </div>
+                </Link>
+              </HoverDropdownItem>
+            </div>
+          </HoverDropdown>
+          {/* Engine Dropdown Menu - Hover */}
+          <HoverDropdown
+            trigger={
+              <div className="text-sm font-medium text-white/80 hover:text-white relative group flex items-center gap-1">
+                <span>Engine</span>
+                <ChevronDown className="h-4 w-4" />
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-secondary group-hover:w-full transition-all duration-300"></span>
+              </div>
+            }
+            contentClassName="bg-cortex-dark-blue/95 backdrop-blur-md border border-secondary/20 text-white min-w-[380px] rounded-md shadow-xl"
           >
-            <span>Engine</span>
-            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-secondary group-hover:w-full transition-all duration-300"></span>
-          </Link>
+            <div className="py-3">
+              <HoverDropdownItem className="font-medium text-secondary/90 px-4 py-2 mb-2 border-b border-secondary/10">
+                Engine Components
+              </HoverDropdownItem>
+              <HoverDropdownItem>
+                <Link href="/engine" className="block">
+                  <div className="flex items-start gap-3 p-3 hover:bg-secondary/10 hover:shadow-md rounded-md transition-all duration-200 group">
+                    <div className="flex-shrink-0 p-2.5 bg-secondary/15 rounded-md shadow-inner border border-secondary/20">
+                      <Cpu className="h-6 w-6 text-secondary" />
+                    </div>
+                    <div>
+                      <div className="font-medium flex items-center">
+                        Zone
+                        <span className="text-[9px] ml-2 text-secondary/80 italic">Research</span>
+                      </div>
+                      <p className="text-xs text-white/70 mt-1">What’s next after Agents?</p>
+                    </div>
+                  </div>
+                </Link>
+              </HoverDropdownItem>
+            </div>
+          </HoverDropdown>
           <Link 
             href="/security" 
             className="text-sm font-medium text-white/80 hover:text-white relative group"
@@ -191,10 +266,10 @@ const Navbar = () => {
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-secondary group-hover:w-full transition-all duration-300"></span>
               </div>
             }
-            contentClassName="bg-cortex-dark-blue/95 backdrop-blur-md border border-secondary/20 text-white min-w-[200px] rounded-md shadow-lg"
+            contentClassName="bg-cortex-dark-blue/95 backdrop-blur-md border border-secondary/20 text-white min-w-[380px] rounded-md shadow-xl"
           >
-            <div className="py-1">
-              <HoverDropdownItem className="font-medium text-secondary/90 px-4 py-2 border-b border-secondary/10">
+            <div className="py-3">
+              <HoverDropdownItem className="font-medium text-secondary/90 px-4 py-2 mb-2 border-b border-secondary/10">
                 About Us
               </HoverDropdownItem>
               <HoverDropdownItem>

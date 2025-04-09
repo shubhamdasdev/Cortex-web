@@ -77,7 +77,7 @@ export default function EnginePage() {
             <div className="w-20 h-1 bg-secondary rounded-full mx-auto mb-6"></div>
             
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-serif leading-tight tracking-tight mb-6">
-              <span className="text-white">The Cortex</span>{" "}
+              <span className="text-white">Zone</span>{" "}
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-secondary to-accent">Engine</span>
             </h1>
             

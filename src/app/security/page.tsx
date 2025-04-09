@@ -73,6 +73,22 @@ export default function SecurityPage() {
             variants={fadeIn}
             className="text-center max-w-3xl mx-auto mb-12"
           >
+            {/* Coming soon badge */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 0.5, duration: 0.4 }}
+              className="inline-block mb-6"
+            >
+              <div className="bg-secondary/10 backdrop-blur-sm border border-secondary/20 rounded-full px-4 py-1 text-xs font-medium text-secondary inline-flex items-center gap-1.5">
+                <span className="relative flex h-2 w-2">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-secondary"></span>
+                </span>
+                <span><strong>Coming Soon</strong> — We're enhancing our security features</span>
+              </div>
+            </motion.div>
+            
             {/* Accent line */}
             <div className="w-20 h-1 bg-secondary rounded-full mx-auto mb-6"></div>
             
