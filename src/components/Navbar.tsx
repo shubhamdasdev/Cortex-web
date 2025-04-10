@@ -15,6 +15,19 @@ import { HoverDropdown, HoverDropdownItem } from "@/components/ui/hover-dropdown
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  
+  // Prevent body scrolling when mobile menu is open
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [isOpen]);
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -323,7 +336,7 @@ const Navbar = () => {
 
       {/* Mobile menu with animation */}
       <div 
-        className={`md:hidden fixed inset-0 z-40 bg-cortex-dark-blue/95 backdrop-blur-lg transition-all duration-300 ${isOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}
+        className={`md:hidden fixed inset-0 z-40 bg-cortex-dark-blue/95 backdrop-blur-lg transition-all duration-300 overflow-y-auto ${isOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}
         style={{ clipPath: isOpen ? 'circle(150% at top right)' : 'circle(0% at top right)' }}
       >
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -331,7 +344,16 @@ const Navbar = () => {
           <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-accent/5 rounded-full filter blur-3xl"></div>
         </div>
         
-        <div className="container h-full flex flex-col justify-center px-6 py-20">
+        {/* Close button positioned at the top right */}
+        <button
+          className="absolute top-6 right-6 z-50 w-10 h-10 flex items-center justify-center rounded-md bg-white/10 hover:bg-white/20 transition-colors"
+          onClick={() => setIsOpen(false)}
+          aria-label="Close menu"
+        >
+          <X className="h-5 w-5 text-white" />
+        </button>
+        
+        <div className="container min-h-screen flex flex-col justify-center px-6 py-20 pb-32">
           <div className="space-y-6 text-center">
             <div className="py-3">
               <h3 className="text-xl font-medium text-secondary mb-2">Products</h3>
