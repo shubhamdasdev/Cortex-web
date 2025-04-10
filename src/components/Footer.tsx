@@ -48,6 +48,11 @@ const Footer = () => {
               <h3 className="text-sm font-medium mb-3">Product</h3>
               <ul className="space-y-2">
                 <li>
+                  <Link href="/about" className="text-sm text-muted-foreground hover:text-foreground">
+                    About
+                  </Link>
+                </li>
+                <li>
                   <Link href="/use-cases" className="text-sm text-muted-foreground hover:text-foreground">
                     Use Cases
                   </Link>
@@ -55,6 +60,14 @@ const Footer = () => {
                 <li>
                   <Link href="/security" className="text-sm text-muted-foreground hover:text-foreground">
                     Security
+                  </Link>
+                </li>
+                <li>
+                  <Link 
+                    href="/blog" 
+                    className="text-sm text-muted-foreground hover:text-foreground"
+                  >
+                    Blog
                   </Link>
                 </li>
               </ul>
@@ -79,7 +92,7 @@ const Footer = () => {
 
         <div className="flex flex-col md:flex-row items-center justify-between pt-6 border-t border-muted">
           <p className="text-sm text-muted-foreground mb-4 md:mb-0">
-            Cortex 2024. All Rights Reserved
+            Cortex 2025. All Rights Reserved
           </p>
           <div className="flex space-x-4">
             <Link

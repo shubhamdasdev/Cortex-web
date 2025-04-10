@@ -168,6 +168,7 @@ const Navbar = () => {
 
             </div>
           </HoverDropdown>
+
           {/* Capabilities Dropdown Menu - Hover */}
           <HoverDropdown
             trigger={
