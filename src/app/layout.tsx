@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title: "Cortex",
   description: "The autonomous financial analyst for financial services. Optimize your team's most common workflows and enhance the quality of every output.",
   icons: {
-    icon: "/images/Ck.png",
+    icon: "/images/CK.png",
   },
 };
 

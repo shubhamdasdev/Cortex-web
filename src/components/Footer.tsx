@@ -83,7 +83,7 @@ const Footer = () => {
           </p>
           <div className="flex space-x-4">
             <Link
-              href="https://www.linkedin.com/company/cortexai"
+              href="https://www.linkedin.com/company/cortexx-ai/?viewAsMember=true"
               className="text-muted-foreground hover:text-foreground transition-colors"
               target="_blank"
               rel="noopener noreferrer"
@@ -92,7 +92,7 @@ const Footer = () => {
               <span className="sr-only">LinkedIn</span>
             </Link>
             <Link
-              href="https://x.com/CortexAI"
+              href="https://x.com/CortexxAIinc"
               className="text-muted-foreground hover:text-foreground transition-colors"
               target="_blank"
               rel="noopener noreferrer"
