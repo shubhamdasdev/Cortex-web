@@ -311,7 +311,7 @@ const Navbar = () => {
             className="text-white/80 hover:text-white hover:bg-white/5 transition-all duration-300" 
             asChild
           >
-            <Link href="https://app.cortex.ai">Log in</Link>
+            <Link href="/login">Log in</Link>
           </Button>
           <Button 
             className="bg-secondary/90 hover:bg-secondary text-white transition-all duration-300 shadow-[0_0_15px_rgba(88,160,194,0.3)] hover:shadow-[0_0_20px_rgba(88,160,194,0.5)]" 
@@ -480,7 +480,7 @@ const Navbar = () => {
               asChild
               onClick={() => setIsOpen(false)}
             >
-              <Link href="https://app.cortex.ai">
+              <Link href="/login">
                 Log in
               </Link>
             </Button>

@@ -645,20 +645,19 @@ export default function UseCasesPage() {
               className="md:w-1/2 relative"
             >
               <div className="relative aspect-video overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm">
-                {/* Video thumbnail with play button */}
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <motion.div 
-                    className="w-16 h-16 rounded-full bg-white/10 flex items-center justify-center cursor-pointer"
-                    whileHover={{ scale: 1.1 }}
-                    transition={{ type: "spring", stiffness: 400, damping: 10 }}
-                  >
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-white">
-                      <polygon points="5 3 19 12 5 21 5 3"></polygon>
-                    </svg>
-                  </motion.div>
-                </div>
-                {/* Gradient overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                {/* YouTube video iframe */}
+                <iframe 
+                  width="100%" 
+                  height="100%" 
+                  src="https://www.youtube.com/embed/gnZJEh-Wfwo?si=dJsVBeCEuGVQFm_2" 
+                  title="YouTube video player" 
+                  frameBorder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  referrerPolicy="strict-origin-when-cross-origin" 
+                  allowFullScreen
+                  className="absolute inset-0"
+                  data-component-name="UseCasesPage"
+                ></iframe>
               </div>
             </motion.div>
             
